@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.err
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #F00;
+	list-style-type: disc;	
+}
+
+.form
+{
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 14px;	
+}
+
+
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+
+	padding: 10px 0;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+
+#nav{
+  border:1px solid #ccc;
+  border-width:1px 0;
+  list-style:none;
+  margin:0;
+  padding:0;
+  text-align:center;
+}
+#nav li{
+  display:inline;
+}
+#nav a{
+  display:inline-block;
+  padding:10px;
+}
+
+
+#content {
+	width: 750px;
+	margin: 0 auto;
+	margin-bottom: 25px;
+	padding: 30px 0;
+	text-align: left;
+}
+
+ul {
+	padding: 0;
+}
+
+ul li {
+	list-style-type: none;
+	display: inline;
+	margin-right: 15px;
+}
+
+ul li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 3px 7px;
+}
+
+ul li a:hover {
+	background: #01458e;
+	color: #ff0;
+}
+
+.default {
+	width: 850px;
+	height: 50px;
+}
+
+.fixed {
+	position: fixed;
+	top: -5px;
+	left: 0;
+	width: 100%;
+}
+
+/* top horizontal menu bar */
+
+
+div.bottombar{ /* bar that runs across the bottom of the menu */
+height: 10px;
+background: #1a1109;
+}
+
+ul.semiopaquemenu{ /* main menu UL */
+font: bold 14px Georgia ;
+width: 100%;
+background: #b1e958;
+padding: 11px 0 8px 0; /* padding of the 4 sides of the menu */
+margin: 0;
+text-align: left; /* set value to "left", "center", or "right" to align menu accordingly */
+}
+
+ul.semiopaquemenu li{
+display: inline;
+}
+
+ul.semiopaquemenu li a{
+color:black;
+padding: 6px 8px 6px 8px; /* padding of the 4 sides of each menu link */
+margin-right: 15px; /* spacing between each menu link */
+text-decoration: none;
+}
+
+ul.semiopaquemenu li a:hover, ul.semiopaquemenu li a.selected{
+color: black;
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjgyIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC4xNiIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+); /* IE9+ SVG equivalent  of linear gradients */
+background: -moz-linear-gradient(top,  rgba(255,255,255,0.82) 0%, rgba(255,255,255,0.16) 100%); /* fade from white (0.82 opacty) to 0.16 opacity */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.82)), color-stop(100%,rgba(255,255,255,0.16)));
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0.82) 0%,rgba(255,255,255,0.16) 100%);
+background: -o-linear-gradient(top,  rgba(255,255,255,0.82) 0%,rgba(255,255,255,0.16) 100%);
+background: -ms-linear-gradient(top,  rgba(255,255,255,0.82) 0%,rgba(255,255,255,0.16) 100%);
+background: linear-gradient(top,  rgba(255,255,255,0.82) 0%,rgba(255,255,255,0.16) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1ffffff', endColorstr='#29ffffff',GradientType=0 );
+-moz-box-shadow: 0 0 5px #595959; /* CSS3 box shadows */
+-webkit-box-shadow: 0 0 5px #595959;
+box-shadow: 0 0 5px #595959;
+padding-top: 12px; /* large padding to get menu item to protrude upwards */
+padding-bottom: 20px; /* large padding to get menu item to protrude downwards */
+}
+
