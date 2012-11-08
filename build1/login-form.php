@@ -4,9 +4,19 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Login Form</title>
 <link href="loginmodule.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+<div class="container">
+<div id="header"><?php include "login-bar.php"; ?></div>
+  
+<div id="nav"><?php include "topmenu.php"; ?></div>
+
+<div class="bottombar"></div>
+
+<div class="content">
 <p>&nbsp;</p>
+
 <form id="loginForm" name="loginForm" method="post" action="login-exec.php">
   <table width="300" border="0" align="center" cellpadding="2" cellspacing="0">
     <tr>
@@ -22,6 +32,10 @@
       <td><input type="submit" name="Submit" value="Login" /></td>
     </tr>
   </table>
-</form>
+</form></div>
+<!-- end .container --></div>
+
+
+
 </body>
 </html>

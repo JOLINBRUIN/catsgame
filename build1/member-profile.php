@@ -6,11 +6,28 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>My Profile</title>
-<link href="loginmodule.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<h1>My Profile </h1>
+
+<div class="container">
+<div id="header"><?php include "login-bar.php"; ?></div>
+
+<div id="nav"><?php include "topmenu.php"; ?></div>
+
+<div class="bottombar"></div>
+
+
+<div class="content">
+<h2>My Profile </h2>
 <a href="member-index.php">Home</a> | <a href="logout.php">Logout</a>
 <p>This is another secure page. </p>
+
+<p>This is a password protected area only accessible to members. </p>
+    <!-- end .content --></div>
+<!-- end .container --></div>
+
+
+
 </body>
 </html>

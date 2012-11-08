@@ -4,9 +4,28 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Registration Successful</title>
 <link href="loginmodule.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<h1>Registration Successful</h1>
+
+
+<div class="container">
+<div id="header">
+
+<?php include "login-bar.php"; ?>
+
+</div>
+  <div class="content">
+
+<?php include "topmenu.php"; ?>
+
+<div class="bottombar"></div>
+<p>&nbsp;</p>
+<h2>Registration Successful</h2>
 <p><a href="login-form.php">Click here</a> to login to your account.</p>
+    <!-- end .content --></div>
+<!-- end .container --></div>
+
+
 </body>
 </html>

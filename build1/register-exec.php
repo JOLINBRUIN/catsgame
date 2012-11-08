@@ -64,10 +64,10 @@ mysql_close($con);
 	
 	//Sanitize the POST values
 	$fname = clean($_POST['fname']);
-	$lname = $_POST['lname'];
-	$login = $_POST['login'];
-	$password = $_POST['password'];
-	$cpassword = $_POST['cpassword'];
+	$lname = clean($_POST['lname']);
+	$login = clean($_POST['login']);
+	$password = clean($_POST['password']);
+	$cpassword = clean($_POST['cpassword']);
 	
 //echo $fname ." ". $lname ." ". $login . $password. mysql_error() ;	
 

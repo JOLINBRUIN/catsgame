@@ -11,13 +11,30 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="style.css" rel="stylesheet" type="text/css">
 <title>Logged Out</title>
 <link href="loginmodule.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<h1>Logout </h1>
-<p align="center">&nbsp;</p>
-<h4 align="center" class="err">You have been logged out.</h4>
+
+<div class="container">
+<div id="header">
+
+<?php include "login-bar.php"; ?>
+
+</div>
+  <div class="content">
+
+<?php include "topmenu.php"; ?>
+
+<div class="bottombar"></div>
+
+<h2>&nbsp;</h2>
+
 <p align="center">Click here to <a href="login-form.php">Login</a></p>
+<h4 align="center" class="err">You have been logged out.</h4></div>
+<!-- end .container --></div>
+
+
 </body>
 </html>

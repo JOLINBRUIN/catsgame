@@ -8,16 +8,19 @@
 
 <body>
 
-<div id="header"></div>
-
 <div class="container">
+<div id="header">
+
+<?php include "login-bar.php"; ?>
+
+</div>
   <div class="content">
 
 <?php include "topmenu.php"; ?>
 
 <div class="bottombar"></div>
 
-    <h1>Instructions</h1>
+    <h1>Game4</h1>
     <p>Be aware that the CSS for these layouts is heavily commented. If you do most of your work in Design view, have a peek at the code to get tips on working with the CSS for the fixed layouts. You can remove these comments before you launch your site. To learn more about the techniques used in these CSS Layouts, read this article at Adobe's Developer Center - <a href="http://www.adobe.com/go/adc_css_layouts">http://www.adobe.com/go/adc_css_layouts</a>.</p>
     <h2>Layout</h2>
     <p>Since this is a one-column layout, the .content is not floated. If you add a .footer within the .container, it will simply follow the .content div. </p>

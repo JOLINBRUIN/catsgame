@@ -7,6 +7,9 @@
 	color: #F00;
 	list-style-type: disc;	
 }
+.container .header {
+	font-size: 9px;
+}
 
 .form
 {
@@ -91,13 +94,14 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
   padding:0;
   text-align:center;
 }
-#nav li{
+
+/*#nav li{
   display:inline;
 }
 #nav a{
   display:inline-block;
   padding:10px;
-}
+}*/
 
 
 #content {
@@ -185,4 +189,3 @@ box-shadow: 0 0 5px #595959;
 padding-top: 12px; /* large padding to get menu item to protrude upwards */
 padding-bottom: 20px; /* large padding to get menu item to protrude downwards */
 }
-

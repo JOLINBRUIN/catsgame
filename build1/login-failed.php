@@ -4,11 +4,33 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Login Failed</title>
 <link href="loginmodule.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+
+<div class="container">
+<div id="header">
+
+<?php include "login-bar.php"; ?>
+
+</div>
+  <div class="content">
+
+<?php include "topmenu.php"; ?>
+
+<div class="bottombar"></div>
+
 <h1>Login Failed </h1>
 <p align="center">&nbsp;</p>
 <h4 align="center" class="err">Login Failed!<br />
   Please check your username and password</h4>
+  
+<p align="center"><a href="login-form.php">Login</a></p>  
+  
+    <!-- end .content --></div>
+<!-- end .container --></div>
+
+
+
 </body>
 </html>
