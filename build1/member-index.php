@@ -9,12 +9,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>My Profile</title>
 <link href="style.css" rel="stylesheet" type="text/css">
+<script src="cookietest.js"></script>
 </head>
 
 <div class="container">
-    <div id="header"><?php include "login-bar.php"; ?></div>
+    <div id="header"><?php include "login-bar.php";?></div>
+    <div style="clear: both;"></div>   
      
-    
     <div id="nav"><?php include "topmenu.php"; ?></div>
     
     <div class="bottombar"></div>

@@ -7,10 +7,11 @@
 </head>
 
 <body>
-<div class="container">
 
+<div class="container">
+	
     <div id="header"><?php include "login-bar.php";?></div>
-    
+    <div style="clear: both;"></div>   
        
 	<div id="nav"><?php include "topmenu.php"; ?></div>
 	<div class="bottombar"></div>
@@ -26,6 +27,10 @@
 		if ($page=='register')
 		{
 			include "register.html";
+		}
+		elseif ($page=='login')
+		{
+			include "login-form.php";
 		}
 		else
 		{

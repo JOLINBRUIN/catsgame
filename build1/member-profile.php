@@ -7,6 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>My Profile</title>
 <link href="style.css" rel="stylesheet" type="text/css">
+<script src="cookietest.js"></script>
 </head>
 <body>
 
@@ -21,6 +22,11 @@
 <div class="content">
 <h2>My Profile </h2>
 <a href="member-index.php">Home</a> | <a href="logout.php">Logout</a>
+<br />
+<button onclick="setCookie(test1, 'hello world')">Set Cookie</button>
+<button onclick="myFunction('Harry Potter','Wizard')">Try Alert</button>
+
+
 <p>This is another secure page. </p>
 
 <p>This is a password protected area only accessible to members. </p>
