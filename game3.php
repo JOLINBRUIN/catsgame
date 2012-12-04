@@ -93,7 +93,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 <li><a href="game3.php" class="selected">Game 3</a></li>
 <li><a href="game4.php">Game 4</a></li>
 <li><a href="game5.php">Game 5</a></li>
-<li><a href="#">Registration</a></li>
+<li><a href="registration.php">Registration</a></li>
 </ul>
 <div class="bottombar"></div>
 

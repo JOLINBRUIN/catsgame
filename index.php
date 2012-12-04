@@ -79,32 +79,13 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 <body>
 
 <div id="header">
-
-  <h2>User Login </h2>
-  <form name="login" method="post" action="login.php">
-   Username: <input type="text" name="username"><br>
-   Password: <input type="password" name="password"><br>
-   Remember Me: <input type="checkbox" name="rememberme" value="1"><br>
-   <input type="submit" name="submit" value="Login!">
-  </form>
-
 </div>
-
-
-
-
 
 <div class="container">
   <div class="content">
 
-<ul class="semiopaquemenu">
-<li><a href="index.php" class="selected">Game 1</a></li>
-<li><a href="game2.php">Game 2</a></li>
-<li><a href="game3.php">Game 3</a></li>
-<li><a href="game4.php">Game 4</a></li>
-<li><a href="game5.php">Game 5</a></li>
-<li><a href="#">Game 6</a></li>
-</ul>
+<?php include "topmenu.php"; ?>
+
 <div class="bottombar"></div>
 
     <h1>Instructions</h1>

@@ -79,3 +79,10 @@
 		die("Query failed");
 	}
 ?>
+
+<html>
+<body>
+<p> You've logged in successfully </p>
+
+<a href="logout.php">Log Out</a>
+</body></html>
