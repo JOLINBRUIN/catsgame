@@ -67,8 +67,9 @@
 			$_SESSION['SESS_MEMBER_ID'] = $member['id'];
 			$_SESSION['SESS_FIRST_NAME'] = $member['firstname'];
 			$_SESSION['SESS_LAST_NAME'] = $member['lastname'];
+			$_SESSION['SESS_USERNAME'] = $member['login'];
 			session_write_close();
-			header("location: member-index.php");
+			header("location: index.php");
 			exit();
 		}else {
 			//Login failed
@@ -79,6 +80,16 @@
 		die("Query failed");
 	}
 ?>
+
+
+<script type="text/javascript">
+    var abc = "<?php echo $_SESSION['SESS_USERNAME']; ?>";
+	
+	alert(abc);
+	
+</script>
+
+
 
 <html>
 <body>

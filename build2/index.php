@@ -15,6 +15,13 @@
 <!-- / END -->
 </head>
 
+<?php 
+
+session_start();
+
+?>
+
+
 
 <body class="nvidia-com">
 
@@ -36,6 +43,24 @@
 		elseif ($page=='login')
 		{
 			include "login-form.php";
+		}
+		elseif ($page=='profile')
+		{
+			include "member-profile.php";
+		}
+		elseif ($page=='access-denied')
+		{
+			include "access-denied.php";
+		}		
+
+		elseif ($page=='logout')
+		{
+			unset($_SESSION['SESS_MEMBER_ID']);
+			unset($_SESSION['SESS_FIRST_NAME']);
+			unset($_SESSION['SESS_LAST_NAME']);
+			unset($_SESSION['SESS_USERNAME']);
+			header('Location: index.php');
+			//include "login-form.php";
 		}
 		else
 		{

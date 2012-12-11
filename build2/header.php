@@ -1,7 +1,7 @@
 <?php 
-/*
-session_start();
 
+session_start();
+/*
 
 if ( empty($_SESSION['SESS_FIRST_NAME']))
 {
@@ -19,10 +19,30 @@ echo '<div class="alignleft">Hello '. $_SESSION['SESS_FIRST_NAME']." ".$_SESSION
 <div id="menu">
 		<div id="menuleft">
 			<a href="index.php"><img src="images/logo_small.png" alt="CATS logo" width="44" height="22" /></a>
-            <div id="leftitems"> &nbsp;Welcome &nbsp;<a href="#" id="loginToggle"></a></div>
+            <div id="leftitems"> &nbsp;Welcome &nbsp; 
+			
+			<?php
+				//if (!empty($_SESSION['SESS_FIRST_NAME']))
+				//{
+            		echo $_SESSION['SESS_FIRST_NAME']." ".$_SESSION['SESS_LAST_NAME'];
+					
+					/*<a href="#" id="loginToggle"></a>*/
+	
+				//}
+			?>
+			</div>
+			
 		</div>
 		<div id="menuright">
-			<a href="#" id="loginToggle">Login</a> | <a href="#" id="loginToggle">Register</a>
+        	<?php if(empty($_SESSION['SESS_FIRST_NAME']))
+				{
+        			echo '<a href="index.php?page=login" id="loginToggle">Login</a> | <a href="index.php?page=register" id="loginToggle">Register</a>';
+				}
+				else
+				{
+					echo '<a href="index.php?page=logout" id="loginToggle">Log Out</a> | <a href="index.php?page=profile" id="loginToggle">Profile</a>';
+				}
+			?>
 		</div>
 </div><!-- end top menu --><div style="clear: both;"></div>   
 
@@ -38,7 +58,7 @@ echo '<div class="alignleft">Hello '. $_SESSION['SESS_FIRST_NAME']." ".$_SESSION
 	<li><a href="index.php">About</a></li>
 	<li><a href="./" class="dir">In-house Games</a>
 		<ul>
-			<li><a href="index.php?page=1">Game1</a></li>
+			<li><a href="index.php?page=1">ExpressO</a></li>
 			<li><a href="index.php?page=2">Game2</a></li>
 			<li><a href="index.php?page=3">Game3</a></li>
 			<li><a href="index.php?page=4">Game4</a></li>

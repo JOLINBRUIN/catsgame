@@ -1,6 +1,6 @@
 
 <form id="loginForm" name="loginForm" method="post" action="login-exec.php">
-  <table width="300" border="0" align="center" cellpadding="2" cellspacing="0">
+  <table width="300" border="0" align="center" cellpadding="10" cellspacing="10">
     <tr>
       <td width="112"><b>Login</b></td>
       <td width="188"><input name="login" type="text" class="textfield" id="login" /></td>
